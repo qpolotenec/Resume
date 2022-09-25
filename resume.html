@@ -1,71 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="cv, resume, Arthur">
-    <meta name="description" content="Резюме Артура Алексаняна">
-    <title>Arthur's Resume</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="cv, resume, Arthur">
+  <meta name="description" content="Резюме Артура Алексаняна">
+  <title>Arthur's Resume</title>
+  <link rel="stylesheet" href="resume.css">
+  <style>
+    @media (max-width: 650px) {
+      .container { 
+        font-size: 1.5rem;
+        padding: 7px;
+        margin: 5px;
+        text-align: center;
+        width: 100%;
+      }
+    }
+
+  </style>
 </head>
+
 <body>
-    <h1><strong>Артур Алексанян</strong> </h1>
+  <div class="container">
+    <div class="image">
+      <img src="ya.jpg" class="avatar" alt="Тут моя фотография">
+      <h1><strong>Артур Алексанян</strong> </h1>
+    </div>
     <hr size="4" color="black">
-<img src="ya.jpg" width="175" alt="Тут моя фотография"> 
-
-<h3>Мои Хобби:</h3>
-
-<ol>
-    <li>Изучение Языков.</li>
-    <li>Занятие Спортом.</li>
-    <li>Танцы.</li>
-    <li>Увлечение видеоиграми.</li>  
-</ol>
-<h2> <strong> Опыт Работы:</strong></h2>
-<table width="350">
-    <thead>
-        <th>Название</th>
-        <th>Должность</th>
-        <th>Год</th>
-    </thead>
-    <tbody>
+    <div class="info">
+      <h2><strong>Информация:</strong></h2>
+      <p>| Я дружелюбный и люблю работать в команде.<strong><em> Обожаю встречать трудности на своем пути, а еще больше
+            люблю их решать!</em></strong> </p>
+      <p>| Люблю заниматься спортом, играть в игры и учить языки.</p>
+      <p>| Я только начал курс <strong>IT-разработки</strong> и хочу продолжать в том же духе!</p>
+    </div>
+    <div class="hobby">
+      <h3>Мои Хобби:</h3>
+      <ul>
+        <li>Изучение Языков.</li>
+        <li>Занятие Спортом.</li>
+        <li>Путешествия.</li>
+        <li>Увлечение видеоиграми.</li>
+      </ul>
+    </div>
+    <div class="exp">
+      <h2> <strong> Опыт Работы:</strong></h2>
+      <table width="350">
         <tr>
-            <td>Ресторан "Zor"</td>
-            <td>Официант</td>
-            <td>2019-2020</td>
+          <th>Название</th>
+          <th>Должность</th>
+          <th>Год</th>
         </tr>
-       <tr>
-         <td>Apelsin.kids</td>
-         <td>Старший Аниматор</td>
-         <td>2021-2022</td>
-       </tr>
-    </tbody>
-</table>
+        <tr>
+          <td>Apelsin.kids</td>
+          <td>Старший Аниматор</td>
+          <td>2021-2022</td>
+        </tr>
+      </table>
+    </div>
 
-<hr size="4" color="black">
-<p>Я только начал курс <strong>IT-разработки</strong> и хочу продолжать в том же духе</p>
+    <hr size="4" color="black">
+    <p style="font-size: 25px;" class="lst"> <strong>Список Социальных Сетей:</strong> </p>
+    <a href="https://vk.com/1alisinyan" target="_blank"> VK</a>
+    |
+    <a href="https://t.me/alexanyan_1" target="_blank">Telegram</a>
+    <hr size="4" color="black">
 
-<p>Я люблю заниматься спортом, играть в игры и <strong><em>постоянно искать что то новое!</em></strong> </p>
-<p> <strong>Список Социальных Сетей:</strong> </p>
-<a href="https://vk.com/1alisinyan" target="_blank"> VK </a> 
-|
-<a href="https://t.me/alexanyan_1" target="_blank">Telegram</a>
-<h1>Связаться со мной:</h1>
-<form>
-<div>
-<label for="text">Ваше Имя:</label>
-<input type="text" placeholder="Введите Имя">
-</div>
-<div>
-<label for="email">Ваш Email:</label>
-<input type="email" name="email" id="email" placeholder="Введите email">
-</div>
-<div>
-<label for="message"> Ваше сообщение:</label>
-<br>
-<textarea placeholder="Введите сообщение..."  name="message" id="message" cols="30" rows="5"></textarea>
-</div>
-<button type="submit">Отправить!</button>
-</form>
+    <form action="/" class="form"> 
+      <h1>Связаться со мной:</h1>
+
+      <div class="form-group"> 
+        <label for="text">Ваше Имя:</label>
+        <input type="text" placeholder="Введите Имя">
+      </div>
+
+      <div class="form-group">
+        <label for="email">Ваш Email:</label>
+        <input type="email" name="email" id="email" placeholder="Введите email">
+      </div>
+
+      <div class="form-group">
+        <label for="message"> Ваше сообщение:</label>
+        <br>
+        <textarea placeholder="Введите сообщение..." name="message" id="message" cols="30" rows="5"></textarea>
+      </div>
+
+      <button class="btn" type="submit">Отправить!</button>
+
+    </form>
+  </div>
 </body>
+
 </html>
